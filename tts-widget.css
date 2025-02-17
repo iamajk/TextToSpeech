@@ -1,0 +1,126 @@
+/* Text-to-Speech Widget Styles */
+#tts-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#tts-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#tts-modal {
+    display: none; /* Ensure this exists */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    z-index: 1000;
+}
+
+#tts-modal.hidden {
+    display: none !important;
+}
+
+
+
+#tts-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tts-container label, .tts-container input, .tts-container select, .tts-container button {
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+}
+
+.tts-container button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tts-container button:hover {
+    background: #0056b3;
+}
+.tts-word {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 2px;
+}
+
+.tts-word.highlight {
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+}
+
+
+/* Modal fixed in the center */
+#tts-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    z-index: 9999;
+    display: none;
+}
+
+/* Ensures modal stays hidden until toggled */
+.hidden {
+    display: none !important;
+}
+
+/* Button stays fixed at the bottom-right */
+#tts-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Speaker button styling */
+#tts-button {
+    font-size: 24px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#tts-modal {
+    display: flex; /* Ensures modal is flex-based and stays visible when toggled */
+    align-items: center;
+    justify-content: center;
+}
